@@ -57,11 +57,11 @@ $sidebars = $bdd->query('SELECT * FROM dqw4_sidebar ORDER BY nom');
 
 				<div class="flex items-center">
 					
-					<a href="#" class="text-[16px] text-zinc-300 hover:text-white hover:scale-105 active:scale-95 transition-all">Installation</a>
+					<a href="../ressources/installation.php" class="text-[16px] text-zinc-300 hover:text-white hover:scale-105 active:scale-95 transition-all">Installation</a>
 
-					<a href="#" class="ml-10 text-[16px] text-zinc-300 hover:text-white hover:scale-105 active:scale-95 transition-all">Composants</a>
+					<a href="../ressources/components.php" class="ml-10 text-[16px] text-zinc-300 hover:text-white hover:scale-105 active:scale-95 transition-all">Composants</a>
 
-					<a href="#" class="ml-10 text-[16px] text-zinc-300 hover:text-white hover:scale-105 active:scale-95 transition-all">hugodoueil.fr</a>
+					<a href="https://hugodoueil.fr" class="ml-10 text-[16px] text-zinc-300 hover:text-white hover:scale-105 active:scale-95 transition-all">hugodoueil.fr</a>
 
 				</div>
 
@@ -504,11 +504,11 @@ $sidebars = $bdd->query('SELECT * FROM dqw4_sidebar ORDER BY nom');
 
 						</div>
 
-						<div class="mt-5 w-full border-b border-zinc-700"></div>
+						<div class="mt-24 w-full border-b border-zinc-700"></div>
 
 					</div>
 
-					<div class="w-full mt-24 flex justify-end">
+					<div class="w-full mt-6 flex justify-end">
 						
 						<p class="text-[15px] text-white">Hugo Doueil | dQw4 Library - Tailwind Components</p>
 
