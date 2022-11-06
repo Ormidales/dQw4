@@ -4,8 +4,6 @@ $bdd = new PDO('mysql:host=localhost;dbname=hugodoueil-station;', 'root', '');
 
 $sidebars = $bdd->query('SELECT * FROM dqw4_sidebar ORDER BY nom');
 
-$sidebars1 = $bdd->query('SELECT * FROM dqw4_sidebar ORDER BY nom');
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -35,7 +33,7 @@ $sidebars1 = $bdd->query('SELECT * FROM dqw4_sidebar ORDER BY nom');
 		<meta property="twitter:image" content="https://hugodoueil.fr/img/bg.webp">
 
 		<!-- DQW4 -->
-		<link rel="stylesheet" type="text/css" href="ressources/dqw4.css">
+		<link rel="stylesheet" type="text/css" href="dqw4.css">
 
 		<!-- GOOGLE FONTS -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,7 +87,7 @@ $sidebars1 = $bdd->query('SELECT * FROM dqw4_sidebar ORDER BY nom');
 
 					<div class="w-full">
 						
-						<p class="text-[30px] text-white font-bold">Pages des composants de dQw4</p>
+						<p class="text-[30px] text-white font-bold">Méthode d'installation de dQw4 !</p>
 
 						<div class="mt-5 w-full border-b border-zinc-700"></div>
 
@@ -97,19 +95,47 @@ $sidebars1 = $bdd->query('SELECT * FROM dqw4_sidebar ORDER BY nom');
 
 					<div class="w-full mt-12">
 						
-						<div class="w-full grid grid-cols-3 gap-12">
+						<p class="text-[20px] text-white mb-5">Étape 1 : Télécharger le dossier Github</p>
+
+						<div class="w-full">
 							
-							<?php while($sidebar1 = $sidebars1->fetch()) { ?>
-								<a href="<?= $sidebar1['lien'] ?>"><div class="w-full h-[20vh] flex items-center justify-center text-xl text-white border border-zinc-700 hover:scale-95 transition-all"><?= $sidebar1['nom'] ?></div></a>
-							<?php } ?>
+							<a href="https://github.com/Ormidales/dQw4"><div class="px-4 py-3 bg-[#0135FF] text-white text-md hover:px-6 transition-all">Aller sur la page Github de dQw4</div></a>
 
 						</div>
 
-						<div class="mt-24 w-full border-b border-zinc-700"></div>
+						<div class="mt-5 w-full border-b border-zinc-700"></div>
 
 					</div>
 
-					<div class="w-full mt-6 flex justify-end">
+					<div class="w-full mt-12">
+						
+						<p class="text-[20px] text-white mb-5">Étape 2 : Télécharger la table et l'installer dans une base de donnée</p>
+
+						<div class="w-full">
+
+
+
+						</div>
+
+						<div class="mt-5 w-full border-b border-zinc-700"></div>
+
+					</div>
+
+					<div class="w-full mt-12">
+						
+						<p class="text-[20px] text-white mb-5">Étape 3 : Modifier la liaison de la base de données dans le code PHP</p>
+
+						<div class="w-full">
+
+
+
+						</div>
+
+						<div class="mt-5 w-full border-b border-zinc-700"></div>
+
+					</div>
+
+					<div class="w-full mt-12 flex justify-end">
 						
 						<p class="text-[15px] text-white">Hugo Doueil | dQw4 Library - Tailwind Components</p>
 
