@@ -124,6 +124,12 @@ $sidebars = $bdd->query('SELECT * FROM dqw4_sidebar ORDER BY nom');
 
 					</div>
 
+					<div class="w-full mt-12 flex justify-end">
+						
+						<p class="text-[15px] text-white">Hugo Doueil | dQw4 Library - Tailwind Components</p>
+
+					</div>
+
 				</div>
 
 			</div>
